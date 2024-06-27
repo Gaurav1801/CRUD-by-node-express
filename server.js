@@ -40,7 +40,7 @@ const Person = require('./models/person');
 
 //use router
 const middlewarePerson = passport.authenticate('local', { session: false });
-app.use('/person', middlewarePerson, personRoutes)
+app.use('/person', personRoutes)
 app.use('/menu', menuRoutes)
 
 
